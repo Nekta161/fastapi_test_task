@@ -10,7 +10,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres_/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
 
   web:
     build: .
@@ -24,4 +24,4 @@ services:
       - .:/app
 
 volumes:
-  postgres_
+  postgres_data:
