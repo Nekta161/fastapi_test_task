@@ -12,7 +12,7 @@ class ItemCreate(ItemBase):
 class ItemUpdate(ItemBase):
     pass
 
-class ItemResponce(ItemBase):
+class ItemResponse(ItemBase):
     id: int
     class Config:
         from_attributes = True
