@@ -15,10 +15,10 @@ app = FastAPI(
 while True:
     try:
         database.engine.connect()
-        print("✅ Подключение к базе данных установлено")
+        print("Подключение к базе данных установлено")
         break
     except OperationalError:
-        print("⏳ Ожидание PostgreSQL... (БД ещё не готова)")
+        print("Ожидание PostgreSQL (БД ещё не готова)")
         time.sleep(2)
 
 # Создаём таблицы, если ещё не созданы
